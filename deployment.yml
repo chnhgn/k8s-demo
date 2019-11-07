@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: k8s-demo-pod
-          image: k8s-demo:v1
+          image: test-service:v1
           ports:
             - containerPort: 80
