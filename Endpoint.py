@@ -8,4 +8,4 @@ def get_demo():
 
 
 if __name__ == '__main__':
-    api.run()
+    api.run(host='0.0.0.0')
