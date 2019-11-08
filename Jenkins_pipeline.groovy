@@ -33,7 +33,7 @@ pipeline{
         }
 		stage('Automated Test') {
           steps{
-              echo "Automated Test Stage"
+              sh "ssh -i ~/.ssh/fall.pem -o StrictHostKeyChecking=no cloud-user@fall.edmt.sashq-d.openstack.sas.com 'python ./k8s-demo/test.py'"
           }
         }
     }
