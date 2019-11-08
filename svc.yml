@@ -5,9 +5,10 @@ metadata:
   labels:
     app: k8s-demo
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-    - port: 5000
-      nodePort: 30050
+    - protocol: "TCP"
+      port: 6000
+      nodePort: 5000
   selector:
     app: k8s-demo

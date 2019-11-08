@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: k8s-demo-deployment
 spec:
-  replicas: 10
+  replicas: 6
   minReadySeconds: 10
   strategy:
     type: RollingUpdate
